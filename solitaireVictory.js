@@ -7,8 +7,8 @@
         var g = settings.g || -3;
         var dt = settings.dt || 20;
         var bounce = settings.bounce || 0.7;
-        var endVelocity = settings.endVelocity || 20;
-        var stagger = settings.stagger || 200;
+        var endVelocity = settings.endVelocity || 10;
+        var stagger = settings.stagger || 10;
         var relativeToDocument = settings.relativeToDocument || false;
         var clear = settings.clear || false;
         var fallToLeft = settings.fallToLeft || false;
