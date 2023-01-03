@@ -17,8 +17,8 @@
   <h4 style='font-weight:normal; margin: 0;'>blah</h4> -->
   <img src='wikinoback.png' width="400px"></img>
   <nav>
-    <button class='clear'>Button #1</button>
-    <button class='everything'>Button #2</button>
+    <button onclick="window.location.href='www.alexanderfalconer.com'" class='clear'>Do</button>
+    <button class='everything'>Don't</button>
   </nav>
   <!-- <p style= 'font-family: Helvetica'>This is a bio.</p> -->
 
@@ -27,9 +27,9 @@
     //   $('h1, h3, p, img').click(function (e) {
     //     $(e.target).solitaireVictory();
     //   });
-      $(document).on('click', 'button.clear', function () {
-        $('').solitaireVictory({ clear: true });
-      })
+      // $(document).on('click', 'button.clear', function () {
+      //   $('').solitaireVictory({ clear: true });
+      // })
       $(document).on('click', 'button.everything', function () {
         $('h1, h3, p, img, button').solitaireVictory();
       })
