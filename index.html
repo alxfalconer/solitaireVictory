@@ -23,17 +23,17 @@
   <!-- <p style= 'font-family: Helvetica'>This is a bio.</p> -->
 
   <script>
-    $(document).on('ready', function () {
-      $('h1, h3, p, img').click(function (e) {
-        $(e.target).solitaireVictory();
-      });
+    // $(document).on('ready', function () {
+    //   $('h1, h3, p, img').click(function (e) {
+    //     $(e.target).solitaireVictory();
+    //   });
       $(document).on('click', 'button.clear', function () {
         $('').solitaireVictory({ clear: true });
       })
       $(document).on('click', 'button.everything', function () {
         $('h1, h3, p, img, button').solitaireVictory();
       })
-    })
+    // })
   </script>
 </body>
 
