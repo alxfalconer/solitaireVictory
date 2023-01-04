@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>YOU L</title>
+  <title>U</title>
   <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src='solitaireVictory.js'></script>
 </head>
@@ -15,12 +15,12 @@
   <!-- <h1 style='margin: 0;'>Don't click.</h1>
   <h3 style='font-weight:normal; margin: 0;'>Don't click anything</h3>
   <h4 style='font-weight:normal; margin: 0;'>blah</h4> -->
-  <h3 id="click" style='font-weight:normal; margin: 0;'>Don't click anything</h3>
+  <h3 id="click" style='font-weight:normal; margin: 0;'>Don't click anythinkjgkbhjkhjkhjkhjkhkjhkjhg</h3>
   <h4 style='font-weight:normal; margin: 0;'>blah</h4>
   <img src='wikinoback.png' width="400px"></img>
   <nav>
     <button class='clear'>Do</button>
-    <button class='everything'>Don't</button>
+    <button onclick="red()" class='everything'>Don't</button>
   </nav>
   <!-- <p style= 'font-family: Helvetica'>This is a bio.</p> -->
 
@@ -34,9 +34,11 @@
       })
       $(document).on('click', 'button.everything', function () {
         $('h1, h3, p, img, button').solitaireVictory();
-        document.getElementById("button.everything").onclick = function(){
-	document.getElementById("click").style.color = 'red';
-}
+        function red()
+        {
+          document.getElementById('click').style.color="red"
+        }
+
 
       })
     })
