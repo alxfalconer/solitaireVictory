@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>YOU WILL</title>
+  <title>YOU L</title>
   <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src='solitaireVictory.js'></script>
 </head>
@@ -34,13 +34,11 @@
       })
       $(document).on('click', 'button.everything', function () {
         $('h1, h3, p, img, button').solitaireVictory();
-      })
-      document.getElementById('click').onclick = changeColor;   
+        document.getElementById("button.everything").onclick = function(){
+	document.getElementById("click").style.color = 'red';
+}
 
-function changeColor() {
-    document.body.style.color = "red";
-    return false;
-}   
+      })
     })
   </script>
 </body>
