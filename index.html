@@ -2,42 +2,35 @@
 <html>
 
 <head>
-  <title>bon</title>
+  <title>jon</title>
   <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src='solitaireVictory.js'></script>
 </head>
 
 <body>
-  <!-- <nav>
-    <button class='clear'>Button #1</button>
-    <button class='everything'>Button #2</button>
-  </nav> -->
   <!-- <h1 style='margin: 0;'>Don't click.</h1>
   <h3 style='font-weight:normal; margin: 0;'>Don't click anything</h3>
   <h4 style='font-weight:normal; margin: 0;'>blah</h4> -->
   <!-- <h3 id="click" style='font-weight:normal; margin: 0;'>Don't click anythinkjgkbhjkhjkhjkhjkhkjhkjhg</h3>
   <h4 style='font-weight:normal; margin: 0;'>blah</h4> -->
   <img src='wikinoback.png' width="400px"></img>
-  <!-- <nav>
+  <img src='alex2.png' width="500px"></img>
+  <nav>
     <button class='clear'>Do</button>
-    <button onclick="red()" class='everything'>Don't</button>
-  </nav> -->
+    <button class='everything'>Don't</button>
+  </nav>
   <!-- <p style= 'font-family: Helvetica'>This is a bio.</p> -->
 
   <script>
-    $(document).on('ready', function () {
-      $('h1, h3, p, img').click(function (e) {
-        $(e.target).solitaireVictory();
-      });
-      // $(document).on('click', 'button.clear', function () {
-      //   $('').solitaireVictory({ clear: true });
-      // })
-      // $(document).on('click', 'button.everything', function () {
-      //   $('h1, h3, p, img, button').solitaireVictory();
-      //   function red()
-      //   {
-      //     document.getElementById('click').style.color="red"
-      //   }
+    // $(document).on('ready', function () {
+    //   $('h1, h3, p, img').click(function (e) {
+    //     $(e.target).solitaireVictory();
+    //   });
+      $(document).on('click', 'button.clear', function () {
+        $('').solitaireVictory({ clear: true });
+      })
+      $(document).on('click', 'button.everything', function () {
+        $('h1, h3, p, img, button').solitaireVictory();
 
 
       })
