@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>YOU DO</title>
+  <title>YOU LOSE</title>
   <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src='solitaireVictory.js'></script>
 </head>
@@ -15,24 +15,32 @@
   <!-- <h1 style='margin: 0;'>Don't click.</h1>
   <h3 style='font-weight:normal; margin: 0;'>Don't click anything</h3>
   <h4 style='font-weight:normal; margin: 0;'>blah</h4> -->
+  <h3 id="click" style='font-weight:normal; margin: 0;'>Don't click anything</h3>
+  <h4 style='font-weight:normal; margin: 0;'>blah</h4>
   <img src='wikinoback.png' width="400px"></img>
   <nav>
-    <button onclick="window.location.href='www.alexanderfalconer.com'" class='clear'>Do</button>
+    <button class='clear'>Do</button>
     <button class='everything'>Don't</button>
   </nav>
   <!-- <p style= 'font-family: Helvetica'>This is a bio.</p> -->
 
   <script>
-    // $(document).on('ready', function () {
-    //   $('h1, h3, p, img').click(function (e) {
-    //     $(e.target).solitaireVictory();
-    //   });
-      // $(document).on('click', 'button.clear', function () {
-      //   $('').solitaireVictory({ clear: true });
-      // })
+    $(document).on('ready', function () {
+      $('h1, h3, p, img').click(function (e) {
+        $(e.target).solitaireVictory();
+      });
+      $(document).on('click', 'button.clear', function () {
+        $('').solitaireVictory({ clear: true });
+      })
       $(document).on('click', 'button.everything', function () {
         $('h1, h3, p, img, button').solitaireVictory();
       })
+      document.getElementById('click').onclick = changeColor;   
+
+function changeColor() {
+    document.body.style.color = "red";
+    return false;
+}   
     // })
   </script>
 </body>
